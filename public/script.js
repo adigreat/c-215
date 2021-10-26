@@ -39,6 +39,7 @@ navigator.mediaDevices
         })
     }
 function addVideoStream(video,stream){
+    
     video.srcObject=stream
     video.addEventListner("loadedmetadata",()=>{
         video.play()
