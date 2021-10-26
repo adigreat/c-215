@@ -39,9 +39,9 @@ navigator.mediaDevices
         })
     }
 function addVideoStream(video,stream){
-    
+
     video.srcObject=stream
-    video.addEventListner("loadedmetadata",()=>{
+    video.addEventListener("loadedmetadata",()=>{
         video.play()
         $("#video_grid").append(video)
     })
